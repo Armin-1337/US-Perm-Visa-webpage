@@ -1,0 +1,10 @@
+,Logistic Regression,k-Nearest Neighbors,Random Forest,GBoosted Machines
+Train_ACC,0.95,0.95,0.96,0.96
+Test_ACC,0.95,0.96,0.96,0.96
+P,1.0,1.0,0.99,0.99
+R,0.95,0.96,0.97,0.96
+F1,0.97,0.98,0.98,0.98
+True negatives,428,706,1374,1080
+False negatives,245,181,305,319
+True positives,53866,53930,53806,53792
+False positives,2654,2376,1708,2002

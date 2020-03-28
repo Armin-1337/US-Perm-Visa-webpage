@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+
+    <title>Machine Learning</title>
+
+    <!--Boostrap Stylesheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="../css/styles.css">
+
+  </head>
+
+  <body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-menu-color" style="text-align: center;">
+	    <div class="home"><a href="../../index.html">Home</a></div>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+              <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="text-align: center;">
+                      <a class="dropdown-item" href="jobs.html">Top Jobs</a>
+                      <a class="dropdown-item" href="salary.html">Salaries</a>
+                      <a class="dropdown-item" href="geo.html">Geographical</a>
+                      <a class="dropdown-item" href="cog.html">Cognizant</a>
+                      <a class="dropdown-item" href="micro.html">Microsoft</a>
+                      <a class="dropdown-item" href="intel.html">Intel</a>
+                      <a class="dropdown-item" href="goog.html">Google</a>
+                      <a class="dropdown-item" href="amaz.html">Amazon</a>
+                  </div>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="ml.html">Machine Learning</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="topemps.html">Employer Dashboard</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="emp.html">Top Employers</a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link" href="data.html">Top 50 Highest Paid</a>
+              </li>   
+          </ul>
+      </div>
+    </nav>
+
+    <!--container-->
+    <div class="container">
+      <article class="description-content row">
+        <div class="col-md-12">
+          <h1 class="description-title">Machine Learning Models</h1>
+          <hr />
+          <p class="description-text">Logistic Rgression Classifier results in 95% accuracy on both test and train. 
+          KNN yielded similar test/train accuracies, however has seen a slight 1% increase in F1 score, making it slightly more accurate than LR. 
+          RFC shows silghtly higher accuracies than previous models with a full 96% accuracy in both test and trains, 
+          however F1 remains the same as KNN even though Recall has seen a 1% improvement, Precision in turn sees a 1% disprovement. 
+          GBC sees no improvement over RFC, with an actual disprovement in Recall compared to RFC. As it stands RFC is the most accurate model and to be used.</p>
+          <div class="table-responsive">
+            <table class="table table-striped table-info">
+              <thead>
+                <tr style="text-align: left;">
+                  <th> </th>
+                  <th>Logistic Regression</th>
+                  <th>k-Nearest Neighbors</th>
+                  <th>Random Forest</th>
+                  <th>GBoosted Machines</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Train_ACC</td>
+                  <td>0.95</td>
+                  <td>0.95</td>
+                  <td>0.96</td>
+                  <td>0.96</td>
+                </tr>
+                <tr>
+                  <td>Test_ACC</td>
+                  <td>0.95</td>
+                  <td>0.96</td>
+                  <td>0.96</td>
+                  <td>0.96</td>
+                </tr>
+                <tr>
+                  <td>P</td>
+                  <td>1.00</td>
+                  <td>1.00</td>
+                  <td>0.99</td>
+                  <td>0.99</td>
+                </tr>
+                <tr>
+                  <td>R</td>
+                  <td>0.95</td>
+                  <td>0.96</td>
+                  <td>0.97</td>
+                  <td>0.96</td>
+                </tr>
+                <tr>
+                  <td>F1</td>
+                  <td>0.97</td>
+                  <td>0.98</td>
+                  <td>0.98</td>
+                  <td>0.98</td>
+                </tr>
+                <tr>
+                  <td>True negatives</td>
+                  <td>428.00</td>
+                  <td>706.00</td>
+                  <td>1374.00</td>
+                  <td>1080.00</td>
+                </tr>
+                <tr>
+                  <td>False negatives</td>
+                  <td>245.00</td>
+                  <td>181.00</td>
+                  <td>305.00</td>
+                  <td>319.00</td>
+                </tr>
+                <tr>
+                  <td>True positives</td>
+                  <td>53866.00</td>
+                  <td>53930.00</td>
+                  <td>53806.00</td>
+                  <td>53792.00</td>
+                </tr>
+                <tr>
+                  <td>False positives</td>
+                  <td>2654.00</td>
+                  <td>2376.00</td>
+                  <td>1708.00</td>
+                  <td>2002.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+      <article class="description-content">
+        <h1 class="description-title">Random Forest Classifier Determined Importance</h1>
+        <hr />
+        <img src="../../output/images/MLfeatures.png" class="description-current"/>
+        <p>It turns out the company that employs you is the most important factor in determining if your application will be successful or not. This is very interesting as this confirms that obtaining a US Visa depends on the legislative competency of the employer, and of course, which employer hires depends on the strength of the applicant. Moving onto other columns, country plays the second biggest factor, this may be due to different country relationships with the US. Afterwards Education is the third, this makes sense as previous analysis showed those with no education had the highest denial ratio. Another interesting fact is that job location holds more importance than wage and job title. Time of application holds the least importance on denial, meaning when you apply and wait long there is no need to panic.</p>
+      </article>
+    </div>
+
+    <footer class="footer navbar-fixed-bottom">
+      <p class="text-footer text-center">
+        <!-- &copy; Your boy Armino @ Trilogy Education Services © 2019. All Rights Reserved. -->
+      </p>
+    </footer>
+
+  </body>
+</html>
